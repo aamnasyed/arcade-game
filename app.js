@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", buildBoard)
 
 // if (boardState[0][0] == "x" && boardState [0][1] === "x" && boardState [0][2] ==="x") {
 // if (boardState [0][0] =="x" && boardState [1][0] === "x" && boardState [2][0] === "x") {
-//     if (boardState [0][0] ==="x" && boardState [1][1] === "x" && boardState) {
+//     if (boardState [0][0] ==="x" && boardState [1][1] === "x" && boardState [2][2] === "x") {
 // //         return "X Wins!"
     
 //     }
