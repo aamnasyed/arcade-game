@@ -1,0 +1,34 @@
+Game board
+    create the rest of the divs(9 total)
+    sections as rows
+    event listener on cells ("click")
+        event.target (where the event happened)
+        console.log
+
+
+
+ Game State
+    who is the current player
+    game board 
+    the win conditions
+
+
+TO DO list
+step1. finish game board
+    a. create sections and divs (give each cell an id=#) split divs into three different columns (creating three different children getElementsById)
+    b. access the game board in javaScript through the dom (getElementsById)
+    c. adding an event listener to the game board that listens for a click 
+    d. use function in event listener to console.log the event.target 
+
+step2. 
+    cellClickFunction - call on event listener with a click 
+    gameMoveFunction 
+        a. it should grab the event.target.innertext (will check to see if the cell is empty- if it is empty you don't want to do anything)
+        b. if cell is empty, we want to mark it with either an x or o - variable = currentPlayer (this helps us keep track of whose turn it is) 
+        c. change the current player 
+
+step3. 
+    check win condition 
+
+
+
