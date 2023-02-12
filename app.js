@@ -79,14 +79,14 @@ window.addEventListener("DOMContentLoaded", buildBoard)
 
 // Win Conditions - How do we confirm the game is over 
 
-if (boardState[0][0] == "x" && boardState [0][1] === "x" && boardState [0][2] ==="x") {
-    if (boardState [0][0] =="x" && boardState [1][0] === "x" && boardState [2][0] === "x") {
-    if (boardState [0][0] ==="x" && boardState [1][1] === "x" && boardState) {
-        return "X Wins!"
-    }
-    }
-}
-console.log(boardState)
+// if (boardState[0][0] == "x" && boardState [0][1] === "x" && boardState [0][2] ==="x") {
+// if (boardState [0][0] =="x" && boardState [1][0] === "x" && boardState [2][0] === "x") {
+//     if (boardState [0][0] ==="x" && boardState [1][1] === "x" && boardState) {
+// //         return "X Wins!"
+    
+//     }
+// }
+// console.log(boardState)
 
 if (!boardState.includes(undefined)) {
     let message = document.createElement("p")
