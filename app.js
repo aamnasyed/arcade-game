@@ -14,7 +14,6 @@ let currentPlayer = "x"
 
 // use loops for Xs and Os
 
-// Function on how to win the game
 //What we want our cells to do when they're clicked 
 function clickCellFunction (event) {
     console.log(event)
@@ -41,7 +40,7 @@ function buildBoard () {
     for (let index=0; index < boardState.length; index++){
         let currentRow= boardState[index]
         let htmlRow= document.createElement("div")
-        htmlRow.className="row" //reassingingg class name (line 31 as well)
+        htmlRow.className="row" //reassingingg class name 
         for (let nestedIndex=0; nestedIndex < currentRow.length; nestedIndex++){
             let currentElement = currentRow[nestedIndex]
             let currentCell = document.createElement("div")
@@ -56,6 +55,41 @@ function buildBoard () {
 }
 window.addEventListener("DOMContentLoaded", buildBoard)
 
+
+// Function on how to win the game
+// Win Conditions - How do we confirm the game is over 
+
+
+function winConditions () {
+    if (boardState[0][0] == "x" && boardState [0][1] === "x" && boardState [0][2] ==="x") {
+        if (boardState [0][0] =="x" && boardState [1][0] === "x" && boardState [2][0] === "x") { 
+            if (boardState [0][0] ==="x" && boardState [1][1] === "x" && boardState [2][2] === "x"); {
+                Sytem.out.println(xWinner) 
+                // message.textContent = "X Wins!"
+                document.getElementsByTagNam.appendChild(message)
+            }
+        }
+    }   
+}
+
+function winConditionsForO () {
+    for (let indexPostion = 0; indexPosition < stateBoard.length; indexPosition++) {
+        let oWin = document.createElement("p");
+    
+        oWin.classList.add("cell");
+        oWin.classList.add(indexPosition)
+
+        oWin.addEventListener("clicl", winConditionsForO)
+        
+
+    }
+}
+
+
+
+// console.log(boardState)
+
+
 // //HOW TO SWAP PLAYER
 // if (currentPlayer == "x") {
 //     event.target.textContent = currentPlayer
@@ -64,29 +98,6 @@ window.addEventListener("DOMContentLoaded", buildBoard)
 //     event.target.textContent = currentPlayer 
 //     currentPlayer ="o"
 // }
-
-
-
-
-// let boardState = [
-//     [undefined, undefined, undefined],
-//     [undefined, undefined, undefined],
-//     [undefined, undefined, undefined],
-// ]
-
-
-
-
-// Win Conditions - How do we confirm the game is over 
-
-// if (boardState[0][0] == "x" && boardState [0][1] === "x" && boardState [0][2] ==="x") {
-// if (boardState [0][0] =="x" && boardState [1][0] === "x" && boardState [2][0] === "x") {
-//     if (boardState [0][0] ==="x" && boardState [1][1] === "x" && boardState [2][2] === "x") {
-// //         return "X Wins!"
-    
-//     }
-// }
-// console.log(boardState)
 
 if (!boardState.includes(undefined)) {
     let message = document.createElement("p")
